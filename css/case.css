@@ -1,0 +1,1311 @@
+/* =============================================
+   GLOBAL — shared across all case pages
+   ============================================= */
+
+.case-main h1,
+.case-main h2,
+.case-main h3 {
+  font-weight: 600;
+  color: #5DB667;
+}
+
+.case-main p {
+  color: #1D2227;
+}
+
+.case-back {
+  position: fixed;
+  top: 32px;
+  left: 40px;
+  z-index: 10;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  background: #111;
+  color: #fff;
+  transition: 0.3s;
+}
+.case-back:hover {
+  background: var(--accent);
+  color: #111;
+}
+
+.case-hero {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 100px 80px 60px 40px;
+}
+
+.case-title {
+  font-size: 54px;
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+.case-subtitle {
+  font-size: 32px;
+  line-height: 1.5;
+  margin: 0 0 32px;
+  max-width: 640px;
+}
+
+.case-section {
+  margin: 0 0 150px;
+}
+
+.case-section:last-child {
+  margin-bottom: 0;
+}
+
+.case-section h2 {
+  font-size: clamp(48px, 7.2vw, 104px);
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+.case-section p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.case-section--dark {
+  background: #000;
+  padding-bottom: 80px;
+}
+
+.case-section--dark h2,
+.case-section--dark p {
+  color: #fff;
+}
+
+.case-section--dark > h2 {
+  text-align: center;
+}
+
+.case-section-finale {
+  padding: 80px;
+}
+
+.case-caption {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 40px;
+}
+
+.case-skill-tag {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: 50px;
+  margin: 4px;
+}
+
+
+/* =============================================
+   HOTKEY APP — hotkey-app.html
+   ============================================= */
+
+.case-section--split {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.case-section--split img {
+  max-width: 600px;
+  height: auto;
+}
+
+.case-goal-text {
+  padding-left: 40px;
+  flex: 1;
+}
+
+.case-split-text {
+  text-align: right;
+}
+
+.case-split-text--left {
+  text-align: left;
+}
+
+.case-split-text h2 {
+  margin: 0 0 24px;
+  line-height: 1.1;
+}
+
+.case-section--challenge {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.case-section--big-title h2 {
+  line-height: 1;
+}
+
+.case-section--centered {
+  text-align: center;
+}
+
+.case-section--centered h2 {
+  margin-bottom: 60px;
+}
+
+.case-challenge-body,
+.case-img-full,
+.case-media-arrow,
+.case-split-media,
+.case-phones-row,
+.case-result-grid {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-img-full + .case-challenge-body {
+  margin-top: 80px;
+}
+
+.case-img-full {
+  display: block;
+  width: 60%;
+}
+
+.case-media-arrow {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-media-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.case-arrow-svg {
+  width: 100%;
+  height: 96px;
+}
+
+.case-media-group {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  display: block;
+}
+
+.case-heading {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 40px;
+}
+
+
+.case-split-media {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-split-media img {
+  height: auto;
+  width: 20%;
+}
+
+.case-split-media.editing img {
+  height: 300px;
+  width: auto;
+}
+
+.case-phones-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-phones-row img {
+  height: 360px;
+  width: auto;
+}
+
+.case-result-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.case-result-images {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.case-result-images img {
+  width: 37%;
+  height: auto;
+}
+
+.case-result-text {
+  padding: 0 16px;
+}
+
+.case-inline-logo {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.case-section--dark .case-accent {
+  color: #5DB667;
+}
+
+
+/* =============================================
+   HOTKEY GROUP BRAND & WEBSITE — hotkey-group-brand-website.html
+   ============================================= */
+
+/* Layout overrides for brand case */
+.case-main--brand .case-section {
+  margin: 0;
+}
+
+.brand-inner {
+  padding: 100px 0;
+}
+
+
+/* Shared h2 style for all case variants */
+.case-main h2.case-h2--brand,
+.case-main h2.case-h2--troika,
+.case-main h2.case-h2--pricing {
+  font-weight: 800;
+  font-size: clamp(42px, 7vw, 100px);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.case-main h2.case-h2--brand  { color: #1D2227; }
+.case-main h2.case-h2--troika { color: #5352C2; }
+.case-main h2.case-h2--pricing { color: #5DB667; }
+
+/* Project Goal section */
+.case-section--project-goal p {
+  line-height: 1.3;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.case-goal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  padding: 50px 0;
+}
+
+.case-goal-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.case-goal-grid__text {
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+/* Pt.1 The Approach section */
+.brand-section--dark {
+  background: #1D2227;
+}
+
+.brand-section--dark h2.case-h2--brand,
+.brand-section--dark p {
+  color: #fff;
+}
+
+.case-section--pt1-approach {
+  text-align: center;
+}
+
+.case-section--pt1-approach img {
+  display: block;
+  margin: 40px auto;
+}
+
+/* Pt.1 Color Palette & Typography */
+.case-section--pt1-color-palette,
+.case-section--pt1-typography,
+.case-section--pt2-challenge {
+  text-align: center;
+}
+
+.case-section--pt2-challenge p {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-section--pt1-color-palette img,
+.case-section--pt1-typography img,
+.case-section--pt2-challenge img {
+  display: block;
+  margin: 40px auto;
+}
+
+.case-section--pt2-challenge img {
+  max-width: 65%;
+}
+
+/* Pt.1 Funny Concepts */
+.pt1-concepts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  justify-items: center;
+}
+
+.pt1-concepts-grid img {
+  width: 100%;
+  height: auto;
+}
+
+/* Shared gradient background */
+.case-section--pt1-result-visuals,
+.case-section--pt2-my-role,
+.case-section--impact {
+  background: linear-gradient(to right, #0E0E0E, #1D2227);
+}
+
+/* Pt.2 My Role section */
+.pt2-role-grid,
+.pt2-role-images,
+.pt2-cjm-grid {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-section--pt2-my-role h2.case-h2--brand,
+.case-section--pt2-my-role p,
+.case-section--impact h2.case-h2--brand,
+.case-section--impact p {
+  color: #fff;
+}
+
+.pt2-role-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.pt2-role-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.pt2-role-images img {
+  width: 100%;
+  height: auto;
+}
+
+.case-section--pt2-my-role > .brand-inner > p {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.pt2-cjm-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.pt2-cjm-title {
+  display: inline;
+  font-weight: 700;
+}
+
+.pt2-cjm-arrow {
+  font-size: 24px;
+  margin: 0 4px 8px;
+  color: #fff;
+}
+
+.pt2-cjm-desc {
+  line-height: 1.2;
+  max-width: 200px;
+}
+
+/* Pt.1 The Result section */
+.pt1-result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto 32px;
+  padding: 50px 0;
+}
+
+.pt1-result-text h2.case-h2--brand,
+.pt1-result-text p {
+  text-align: right;
+}
+
+/* Pt.2 Key Decisions */
+.case-section--pt2-key-decisions {
+  text-align: center;
+}
+
+.case-section--pt2-key-decisions .brand-inner > p {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.pt2-kd-tags {
+  margin-bottom: 60px;
+}
+
+.pt2-kd-img {
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 100%;
+}
+
+.pt2-kd-grid-6,
+.pt2-kd-grid-3 {
+  display: grid;
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto 40px;
+}
+
+.pt2-kd-grid-6 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pt2-kd-grid-6 img,
+.pt2-kd-grid-3 img {
+  width: 100%;
+  height: auto;
+}
+
+.pt2-kd-grid-3 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.pt2-kd-grid-3 img:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 50%;
+}
+
+.pt2-kd-grid-13 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1440px;
+  margin: 0 auto 40px;
+}
+
+.pt2-kd-grid-13 img {
+  flex: 0 0 calc((100% - 4 * 16px) / 5);
+  height: auto;
+}
+
+/* Pt.2 The Result */
+.case-section--pt2-result {
+  text-align: center;
+}
+
+.pt2-result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  max-width: 1440px;
+  margin: 40px auto 0;
+}
+
+.pt2-result-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pt2-result-col img {
+  width: 100%;
+  height: auto;
+}
+
+/* HotKey Cinema */
+.case-main--brand .case-section--hotkey-cinema {
+  margin-bottom: -2px;
+}
+
+.case-section--hotkey-cinema img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Impact */
+.case-section--impact {
+  text-align: center;
+}
+
+.case-section--impact img {
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.case-section--impact .brand-inner > p {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+/* Pt.1 The Challenge section */
+.pt1-label {
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pt1-challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  padding: 50px 0;
+}
+
+.pt1-challenge-grid img {
+  justify-self: center;
+}
+
+.pt1-challenge-text p {
+  line-height: 1.3;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+
+/* =============================================
+   TROIKA — troika.html
+   ============================================= */
+
+
+.case-main--troika .case-section--project-goal {
+  text-align: center;
+  background: linear-gradient(to top, #EFF5FF, #D5DEEE, #D0DCEE);
+}
+
+.case-main--troika .case-section--project-goal .brand-inner {
+  padding-bottom: 0;
+}
+
+.case-section--ideation, .case-section--logo-rebranding {
+  background: #EEEEF9;
+}
+
+.case-main--troika .case-section--logo-rebranding > .brand-inner > p {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.troika-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 60px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0 20px;
+}
+
+.troika-logo-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.troika-logo-label {
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+.case-section--fonts-colors h2.case-h2--troika {
+  background: linear-gradient(to right, #DCF763 50%, #5352C2 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.troika-ideation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.troika-ideation-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.troika-ideation-images img {
+  width: 100%;
+  height: auto;
+}
+
+.case-main--troika .case-section--project-goal {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.troika-trucks-img {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+}
+
+/* Fonts & Colors */
+.case-main--troika .case-section--fonts-colors {
+  background: linear-gradient(to right, #5352C2 50%, #EEEEF9 50%);
+}
+
+.troika-fc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.troika-fc-col {
+  display: grid;
+  gap: 88px;
+  align-content: center;
+  padding: 0px 60px;
+}
+
+.troika-fc-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+.case-main--troika p.troika-font-name {
+  font-size: 100px;
+  font-weight: 800;
+  color: #DCF763;
+  line-height: 1;
+  margin: 0 0 25px;
+}
+
+.case-main--troika p.troika-font-desc {
+  color: #fff;
+  font-size: 18px;
+}
+
+.case-main--troika p.troika-fc-label {
+  color: #5352C2;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.troika-colors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.troika-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+}
+
+.troika-colors-grid img,
+.troika-icons-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.troika-icons-grid img {
+  max-width: 80px;
+}
+
+/* Logo Result */
+.case-section--logo-result {
+  text-align: center;
+}
+
+.troika-logo-result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 40px auto 0;
+}
+
+.troika-logo-result-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Merch */
+.troika-merch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.troika-merch-grid--4 {
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 0;
+}
+
+.troika-merch-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Website */
+.case-section--website {
+  background: #DCF763;
+}
+
+.troika-website-img {
+  display: block;
+  height: auto;
+  transform: translateX(-20%);
+}
+
+/* Finale */
+.case-main--troika .case-section-finale {
+  background: #5352C2;
+}
+
+.case-main--troika .case-section-finale h2 {
+  color: #DCF763;
+}
+
+/* Tablet */
+.troika-tablet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+  justify-content: center;
+}
+
+.troika-tablet-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Mobile */
+.case-section--mobile {
+  background: #5352C2;
+}
+
+.troika-mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 24px;
+  justify-content: end;
+}
+
+.troika-mobile-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============================================
+   B2B PRICING CALCULATOR — b2b-pricing.html
+   ============================================= */
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.pricing-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 20px;
+  color: #1D2227;
+  line-height: 1.4;
+  margin-bottom: 74px;
+}
+
+.pricing-list__star {
+  width: 24px;
+}
+
+.kd-outer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  align-items: start;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.kd-outer-grid > .kd-block:nth-child(1) { grid-column: 1; grid-row: 1; }
+.kd-outer-grid > .kd-block:nth-child(2) { grid-column: 2; grid-row: 1; }
+.kd-outer-grid > .kd-block:nth-child(3) { grid-column: 1; grid-row: 2; }
+.kd-outer-grid > .kd-block:nth-child(4) { grid-column: 2; grid-row: 2; }
+.kd-outer-grid > .kd-block:nth-child(5) { grid-column: 3; grid-row: 1 / 3; }
+
+.kd-block {
+  display: grid;
+  align-items: start;
+  gap: 24px;
+}
+
+.kd-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+}
+
+.kd-header span {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1D2227;
+}
+
+.kd-img {
+  max-width: 100%;
+}
+
+.pricing-implementation-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.pricing-implementation-grid h2.case-h2--pricing {
+  text-align: left;
+  font-size: clamp(32px, 4vw, 60px);
+  margin-bottom: 24px;
+}
+
+.pricing-implementation-grid img {
+  max-width: 100%;
+}
+
+.pricing-solution-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.pricing-solution-grid h2 {
+  margin-bottom: 0;
+  text-align: right;
+  justify-self: stretch;
+}
+
+.pricing-solution-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pricing-impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.pricing-impact-grid h2.case-h2--pricing {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.pricing-impact-grid img {
+  max-width: 100%;
+}
+
+.case-section--pricing-overview p {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-section--pricing-overview img {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+}
+
+/* =============================================
+   MEDIA QUERIES
+   ============================================= */
+
+@media (min-width: 2000px) {
+  /* HotKey App */
+  .case-section--centered > p {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Troika */
+  .troika-mobile-grid {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .case-section--website .brand-inner {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .troika-website-img {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Global */
+  .case-hero { padding: 100px 24px 40px; }
+  .case-title { font-size: 36px; }
+  .case-subtitle { font-size: 16px; }
+  .case-back { top: 16px; left: 16px; }
+  .case-main { padding: 0; }
+  .case-section { margin: 0 0 100px; }
+  .case-section--dark { padding-bottom: 40px; }
+
+  /* HotKey App */
+  .case-media-arrow,
+  .case-phones-row,
+  .case-heading,
+  .case-caption,
+  .case-challenge-body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .case-section--split {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .case-goal-text { padding-right: 20px; }
+
+  .case-section--split img {
+    height: auto;
+    width: 100%;
+  }
+
+  .case-split-media { flex-direction: column; }
+
+  .case-split-media img {
+    height: auto;
+    width: 70%;
+  }
+
+  .case-phones-row img {
+    height: auto;
+    width: 100%;
+  }
+
+  .case-split-text { text-align: center; }
+
+  .case-media-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .case-media-group { height: auto; }
+  .case-arrow-svg { display: none; }
+
+  .case-result-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .case-phones-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .case-heading { font-size: 24px; }
+  .case-caption { font-size: 18px; }
+  .case-img-full { margin-bottom: 0; width: 100%; }
+  .case-phones-row--many img { width: 44%; }
+
+  /* HotKey Group Brand & Website */
+  .brand-inner { padding: 50px 16px; }
+  .pt1-concepts-grid { grid-template-columns: 1fr; }
+  .case-section--pt1-approach img,
+  .case-section--pt1-color-palette img,
+  .case-section--pt1-typography img,
+  .case-section--pt2-challenge img { max-width: 100%; }
+
+  .case-goal-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .pt1-challenge-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .pt1-challenge-grid img { width: 100%; height: auto; }
+
+  .pt1-result-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .pt1-result-grid img { width: 100%; height: auto; }
+
+  .pt1-result-text h2.case-h2--brand,
+  .pt1-result-text p { text-align: left; }
+
+  .pt2-role-grid {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin-bottom: 40px;
+  }
+
+  .pt2-role-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
+
+  .pt2-cjm-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pt2-cjm-arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+
+  .pt2-cjm-desc { max-width: none; }
+
+  .pt2-cjm-item p {
+    margin: 4px 0;
+  }
+
+  /* Troika */
+  .case-main--troika .case-section--project-goal {
+    min-height: 40vh;
+  }
+
+  .troika-website-img {
+    transform: none;
+    max-width: 100%;
+  }
+
+  .troika-logo-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0;
+  }
+
+  .troika-logo-col img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .troika-ideation-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0;
+  }
+
+  .case-main h2.case-h2--troika {
+    margin-bottom: 30px;
+  }
+
+  .case-main h2.case-h2--pricing {
+    margin-bottom: 30px;
+  }
+
+  .kd-outer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .kd-outer-grid > .kd-block:nth-child(n) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .pricing-implementation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-implementation-grid img { order: 2; }
+  .pricing-implementation-grid > div { order: 1; }
+
+  .pricing-solution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-main--troika .case-section--fonts-colors {
+    background: #EEEEF9;
+  }
+
+  .case-section--fonts-colors h2.case-h2--troika {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+    color: #5352C2;
+  }
+
+  .case-main--troika p.troika-font-name {
+    color: #5352C2;
+    font-size: 30px;
+  }
+
+  .case-main--troika p.troika-font-desc {
+    color: #1D2227;
+  }
+
+  .troika-fc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .troika-fc-col {
+    gap: 48px;
+  }
+
+  .troika-merch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .troika-merch-grid--4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .troika-mobile-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+  }
+
+  .troika-mobile-grid img {
+    width: 100%;
+  }
+
+  .troika-tablet-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .troika-fc-col--type,
+  .troika-fc-col--colors {
+    padding: 18px 16px;
+  }
+
+  .troika-icons-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+  /* Pt.2 Key Decisions */
+  .pt2-kd-grid-6,
+  .pt2-kd-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .pt2-kd-grid-3 img:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .pt2-kd-grid-13 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Pt.2 The Result */
+  .pt2-result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pt2-result-col {
+    display: contents;
+  }
+
+  .pt2-kd-grid-13 img {
+    max-width: 100%;
+  }
+}
