@@ -88,6 +88,32 @@ document.querySelectorAll('.about-ct-img, .about-wide-ghost, .about-dog-img').fo
   });
 });
 
+document.querySelectorAll('.about-card').forEach(card => {
+  const [expandBtn, closeBtn] = card.querySelectorAll('.about-card-controls svg');
+
+  const toast = document.createElement('div');
+  toast.className = 'about-card-toast';
+  toast.textContent = "Hey, don't delete me! I'm human enough!";
+  card.appendChild(toast);
+
+  let toastTimer;
+  closeBtn.addEventListener('click', () => {
+    clearTimeout(toastTimer);
+    toast.classList.add('visible');
+    toastTimer = setTimeout(() => toast.classList.remove('visible'), 2500);
+  });
+
+  expandBtn.addEventListener('click', () => {
+    if (card.dataset.animating) return;
+    card.dataset.animating = '1';
+    card.classList.add('about-card--expanded');
+    setTimeout(() => {
+      card.classList.remove('about-card--expanded');
+      delete card.dataset.animating;
+    }, 500);
+  });
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
