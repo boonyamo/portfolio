@@ -635,6 +635,11 @@
       background-size: cover;
       background-position: center;
     }
+    .card--ntm {
+      background-image: url('https://res.cloudinary.com/dbqs8l5nv/image/upload/v1777543981/ntm_website_cover_oi2u4t.png');
+      background-size: cover;
+      background-position: center;
+    }
     footer {
       text-align: center;
       padding: 80px 24px;
@@ -694,7 +699,8 @@
       .card--hotkey-app,
       .card--hotkey-group,
       .card--troika,
-      .card--sales {
+      .card--sales,
+      .card--ntm {
         aspect-ratio: unset;
         background-size: 100% auto;
         background-position: top center;
@@ -711,14 +717,17 @@
       .work .card--troika h3,
       .work .card--troika p,
       .work .card--sales h3,
-      .work .card--sales p {
+      .work .card--sales p,
+      .work .card--ntm h3,
+      .work .card--ntm p {
         color: #111;
       }
        .work h2 { padding: 0 16px; }
       .card--hotkey-app:hover::after,
       .card--hotkey-group:hover::after,
       .card--troika:hover::after,
-      .card--sales:hover::after {
+      .card--sales:hover::after,
+      .card--ntm:hover::after {
         opacity: 0;
       }
       .contact-links { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 12px; }
